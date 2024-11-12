@@ -25,6 +25,7 @@ public class InputManager : MonoBehaviour
             _instance = this;
         }
         playerInput = new PlayerInput(); //reference the player input system
+        Cursor.visible = false;
     }
 
     private void OnEnable()
