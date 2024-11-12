@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
         cameraTransform = Camera.main.transform;
     }
 
-    void Update()
+    void FixedUpdate()
     {
 
         Vector2 movement = inputManager.GetPlayerMovement();
