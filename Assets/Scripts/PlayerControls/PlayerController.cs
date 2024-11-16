@@ -3,13 +3,13 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour   //Player controller will be single responsibility, only players can move and there is just one player
 {
+    [SerializeField] private float playerSpeed = 4.0f;  //how fast player moves
+    [SerializeField] private float gravityValue = -9.81f;   //player's gravity handle
+
     private CharacterController controller;
     private Vector3 playerVelocity;
     private InputManager inputManager;
     private Transform cameraTransform;
-
-    [SerializeField] private float playerSpeed = 2.0f;  //how fast player moves
-    [SerializeField] private float gravityValue = -9.81f;   //player's gravity handle
 
     private void Start()
     {
