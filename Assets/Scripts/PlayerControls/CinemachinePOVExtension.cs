@@ -6,8 +6,8 @@ public class CinemachinePOVExtension : CinemachineExtension
     private Vector3 startingRotation;
     private InputManager inputManager;
 
-    [SerializeField] private float lookSpeed = 10f;
-    [SerializeField] private float clampAngle = 75f;
+    [SerializeField] private float lookSpeed = 10f; //camera move speed
+    [SerializeField] private float clampAngle = 75f; //camera vertical rotation limits, we don't want the camera rotate 360 degrees vertically
 
     protected override void Awake()
     {
@@ -21,6 +21,7 @@ public class CinemachinePOVExtension : CinemachineExtension
         {
             if (stage == CinemachineCore.Stage.Aim)
             {
+                //player look
                 if (startingRotation == null)   startingRotation = transform.localRotation.eulerAngles;
 
                 Vector2 deltaInput = inputManager.GetMouseDelta();
