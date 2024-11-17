@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -19,5 +21,16 @@ public class PlayerStats : MonoBehaviour
         health += value;
         Debug.Log("Health: " + health);
         obj.SetActive(false);
+    }
+
+    public void Trap(int damage)
+    {
+        health -= damage;
+        Debug.Log("Health: " + health);
+        if (health <= 0)
+        {
+            Debug.Log("You died");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }

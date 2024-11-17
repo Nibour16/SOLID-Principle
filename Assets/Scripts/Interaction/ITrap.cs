@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-interface ICollectable
+interface ITrap
 {
-    void Collect();
+    void PlayerHit();
 }

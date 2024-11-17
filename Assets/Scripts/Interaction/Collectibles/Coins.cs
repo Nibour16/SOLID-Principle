@@ -4,16 +4,12 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
-public class Coins : MonoBehaviour, IInteractable, ICollectable
+public class Coins : MonoBehaviour, IInteractable
 {
     [SerializeField] private int value = 10;
     [SerializeField] private PlayerStats playerStats;
 
     public void Interact()
-    {
-        Collect();
-    }
-    public void Collect()
     {
         playerStats.GetCoin(value, gameObject);
     }
