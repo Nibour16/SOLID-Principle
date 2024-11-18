@@ -6,6 +6,11 @@ public class HealthPotion : CollectibleStats, IInteractable
 {
     public void Interact()
     {
+        GetHP();
+    }
+
+    private void GetHP()
+    {
         playerStats.health += value;
         Debug.Log("Health: " + playerStats.health);
         gameObject.SetActive(false);

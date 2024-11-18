@@ -8,6 +8,11 @@ public class Coins : CollectibleStats, IInteractable
 {
     public void Interact()
     {
+        GetCoin();
+    }
+
+    private void GetCoin()
+    {
         playerStats.score += value;
         Debug.Log("Score: " + playerStats.score);
         gameObject.SetActive(false);
