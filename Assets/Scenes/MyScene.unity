@@ -299,8 +299,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f71e81492facd7146b0a0463e6d49ed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
   playerStats: {fileID: 562785433}
+  damage: 1
 --- !u!65 &325631303
 BoxCollider:
   m_ObjectHideFlags: 0

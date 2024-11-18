@@ -4,13 +4,12 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
-public class Coins : MonoBehaviour, IInteractable
+public class Coins : InteractibleStats, IInteractable
 {
-    [SerializeField] private int value = 10;
-    [SerializeField] private PlayerStats playerStats;
-
     public void Interact()
     {
-        playerStats.GetCoin(value, gameObject);
+        playerStats.score += value;
+        Debug.Log("Score: " + playerStats.score);
+        gameObject.SetActive(false);
     }
 }

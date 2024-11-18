@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthPotion : MonoBehaviour, IInteractable
+public class HealthPotion : InteractibleStats, IInteractable
 {
-    [SerializeField] private int value = 1;
-    [SerializeField] private PlayerStats playerStats;
-
     public void Interact()
     {
-        playerStats.GetHP(value, gameObject);
+        playerStats.health += value;
+        Debug.Log("Health: " + playerStats.health);
+        gameObject.SetActive(false);
     }
 }

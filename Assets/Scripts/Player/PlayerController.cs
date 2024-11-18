@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class PlayerController : MonoBehaviour   //Player controller will be single responsibility, only players can move and there is just one player
+public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float playerSpeed = 4.0f;  //how fast player moves
     [SerializeField] private float gravityValue = -9.81f;   //player's gravity handle

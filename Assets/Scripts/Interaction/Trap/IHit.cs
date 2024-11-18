@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-interface ITrap
+interface IHit
 {
-    void PlayerHit();
+    void PlayerHit(int damage);
 }
