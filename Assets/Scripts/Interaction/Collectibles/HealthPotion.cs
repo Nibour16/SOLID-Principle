@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthPotion : InteractibleStats, IInteractable
+public class HealthPotion : CollectibleStats, IInteractable
 {
     public void Interact()
     {

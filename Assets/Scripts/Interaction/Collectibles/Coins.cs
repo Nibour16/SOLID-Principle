@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
-public class Coins : InteractibleStats, IInteractable
+public class Coins : CollectibleStats, IInteractable
 {
     public void Interact()
     {
