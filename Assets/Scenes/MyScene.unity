@@ -189,7 +189,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.75, y: 1.375, z: 0.75}
+  m_Size: {x: 1, y: 1.375, z: 1}
   m_Center: {x: 0, y: 0.3, z: 0}
 --- !u!1001 &131077907
 PrefabInstance:
@@ -435,7 +435,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.3}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0.05}
 --- !u!4 &339585163
 Transform:
@@ -569,7 +569,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.3}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0.05}
 --- !u!114 &346377278
 MonoBehaviour:
@@ -1515,7 +1515,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.75, y: 1.375, z: 0.75}
+  m_Size: {x: 1, y: 1.375, z: 1}
   m_Center: {x: 0, y: 0.3, z: 0}
 --- !u!114 &1680966756
 MonoBehaviour:
