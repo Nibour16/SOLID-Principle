@@ -615,7 +615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactSource: {fileID: 963194228}
-  interactDistance: 30
+  interactDistance: 5
 --- !u!4 &391673287
 Transform:
   m_ObjectHideFlags: 0
