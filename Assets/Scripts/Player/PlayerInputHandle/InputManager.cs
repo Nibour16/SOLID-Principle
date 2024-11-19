@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
+    //Create instance
     private static InputManager _instance;
 
     public static InputManager Instance

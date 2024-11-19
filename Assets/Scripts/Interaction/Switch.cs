@@ -2,19 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Switch : MonoBehaviour, IInteractable
+//Switch for open a door
+public class Switch : DoorManager, IInteractable
 {
-    [SerializeField] private Transform door;
-    [SerializeField] private Transform doorOpenedPos;
-    [SerializeField] private float frequency = 0.5f;
-
-    private bool isTriggered = false;
-    public void Interact()
+    public void Interact()  //Interaction for trigger the switch
     {
         triggerSwitch();
     }
 
-    private void triggerSwitch()
+    private void triggerSwitch()    //Successfully triggered
     {
         Debug.Log("triggered");
         isTriggered = true;
@@ -22,8 +18,9 @@ public class Switch : MonoBehaviour, IInteractable
 
     private void Update()
     {
-        if (isTriggered)
+        if (isTriggered)    //If switch is on
         {
+            //Door is opened by move the door object to certain position
             door.position = Vector3.MoveTowards(door.position, doorOpenedPos.position, Time.time * frequency / 100);
         }
     }

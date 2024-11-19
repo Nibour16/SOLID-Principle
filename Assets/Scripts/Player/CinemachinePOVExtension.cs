@@ -9,7 +9,7 @@ public class CinemachinePOVExtension : CinemachineExtension
     [SerializeField] private float lookSpeed = 10f; //camera move speed
     [SerializeField] private float clampAngle = 75f; //camera vertical rotation limits, we don't want the camera rotate 360 degrees vertically
 
-    protected override void Awake()
+    protected override void Awake() //Awake my input manager, unfortunately it can only 
     {
         inputManager = InputManager.Instance;
         base.Awake();

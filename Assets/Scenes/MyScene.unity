@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 1
-  playerStats: {fileID: 562785433}
+  playerStats: {fileID: 391673288}
 --- !u!65 &51566964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f71e81492facd7146b0a0463e6d49ed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStats: {fileID: 562785433}
+  playerStats: {fileID: 391673288}
   damage: 1
 --- !u!65 &325631303
 BoxCollider:
@@ -415,7 +415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 10
-  playerStats: {fileID: 562785433}
+  playerStats: {fileID: 391673288}
 --- !u!65 &339585162
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -584,7 +584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 10
-  playerStats: {fileID: 562785433}
+  playerStats: {fileID: 391673288}
 --- !u!1 &391673285
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,8 +595,9 @@ GameObject:
   m_Component:
   - component: {fileID: 391673287}
   - component: {fileID: 391673286}
+  - component: {fileID: 391673288}
   m_Layer: 0
-  m_Name: '[InteractManager]'
+  m_Name: '[GameManager]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -631,6 +632,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &391673288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391673285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0d74148e1ce9e7478666c3339b3fed5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 4
+  score: 0
 --- !u!1 &562785429
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,7 +657,6 @@ GameObject:
   - component: {fileID: 562785430}
   - component: {fileID: 562785431}
   - component: {fileID: 562785432}
-  - component: {fileID: 562785433}
   - component: {fileID: 562785434}
   m_Layer: 0
   m_Name: Player
@@ -708,20 +722,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 8
   gravityValue: -9.81
---- !u!114 &562785433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 562785429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0d74148e1ce9e7478666c3339b3fed5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 4
-  score: 0
 --- !u!136 &562785434
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1389,7 +1389,6 @@ GameObject:
   - component: {fileID: 1608334619}
   - component: {fileID: 1608334618}
   - component: {fileID: 1608334620}
-  - component: {fileID: 1608334621}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -1466,18 +1465,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookSpeed: 15
   clampAngle: 75
---- !u!114 &1608334621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608334617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ae2fb90e4023fa4eaf46f529c715e29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1680966754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1530,7 +1517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 1
-  playerStats: {fileID: 562785433}
+  playerStats: {fileID: 391673288}
 --- !u!4 &1680966757
 Transform:
   m_ObjectHideFlags: 0
