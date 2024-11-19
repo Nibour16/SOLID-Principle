@@ -12,8 +12,8 @@ public class HealthPotion : CollectibleStats, IInteractable
 
     private void GetHP()   //Health potion function for add player's HP by its value
     {
-        playerStats.health += value;
-        Debug.Log("Health: " + playerStats.health);
+        PlayerStats.Instance.health += value;
+        Debug.Log("Health: " + PlayerStats.Instance.health);
         gameObject.SetActive(false);
     }
 }
