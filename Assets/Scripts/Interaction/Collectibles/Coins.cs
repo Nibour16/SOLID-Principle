@@ -14,8 +14,8 @@ public class Coins : CollectibleStats, IInteractable
 
     private void GetCoin()  //Coin function (get score by its value)
     {
-        playerStats.score += value;
-        Debug.Log("Score: " + playerStats.score);
+        PlayerStats.Instance.score += value;
+        Debug.Log("Score: " + PlayerStats.Instance.score);
         gameObject.SetActive(false);
     }
 }

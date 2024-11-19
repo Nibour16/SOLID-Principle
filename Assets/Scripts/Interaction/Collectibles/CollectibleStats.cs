@@ -8,5 +8,4 @@ using UnityEngine;
 public abstract class CollectibleStats : MonoBehaviour
 {
     [SerializeField] protected int value = 10;
-    [SerializeField] protected PlayerStats playerStats;
 }
