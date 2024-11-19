@@ -13,13 +13,12 @@ Its job is just share its variables and functions to other classes that needs it
 
 public abstract class TrapCalculation : MonoBehaviour, IHit
 {
-    [SerializeField] private PlayerStats playerStats;
     public void PlayerHit(int damage)   //only public method can be applied for interface that handles itself
     {
 
-        playerStats.health -= damage;
-        Debug.Log("Health: " + playerStats.health);
-        if (playerStats.health <= 0)
+        PlayerStats.Instance.health -= damage;
+        Debug.Log("Health: " + PlayerStats.Instance.health);
+        if (PlayerStats.Instance.health <= 0)
         {
             Debug.Log("You died");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
